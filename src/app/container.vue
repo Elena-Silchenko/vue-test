@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex">
-    <div style="max-width: 20em; width: 20em;">
+    <div style="max-width: 20em; width: 20em; min-width: 20em;">
       <app-sidebar style="max-width: 20em; width: 20em;" />
     </div>
     <app-main class="flex" />
