@@ -1,10 +1,10 @@
 <template>
   <v-main>
     <v-container>
-      <div style="padding: 2em; background: #bebebe; height: 2000px">
+      <div style="padding: 2em; background: #f3f3f3;">
         <app-about />
         <app-portfolio class="mb-5" />
-        <app-contact />
+        <app-contact class="mb-5"/>
         <app-price />
       </div> 
     </v-container>
