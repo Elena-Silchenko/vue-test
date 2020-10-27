@@ -26,7 +26,7 @@
     }),
 
     mounted() {
-      this.startScroll = this.$el.offsetTop
+      this.startScroll = this.$el.offsetTop - 30
       window.addEventListener("scroll", this.checkScroll)
       this.checkScroll()
     },
@@ -51,14 +51,20 @@
         text-decoration: none;
 
         &:hover {
-          color: red;
+          color: var(--blue);
         }
       }
     }
 
     &.fixed {
       position: fixed;
-      top: 0;
+      top: 30px;
     }
+  }
+</style>
+
+<style>
+  :root {
+    --blue: #6200ea;
   }
 </style>

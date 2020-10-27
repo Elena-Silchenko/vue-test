@@ -55,7 +55,7 @@ export default {
     }
 
     .progress-actual {
-      background: red;
+      background: var(--blue);
       position: absolute;
       top: 0;
       left: 0;
