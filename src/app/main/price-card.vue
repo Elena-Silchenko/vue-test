@@ -1,12 +1,11 @@
 <template>
-  <v-card class="mx-auto" max-width="280" elevation="10" outlined tile>
-    
+  <v-card class="mx-auto" max-width="280" elevation="10" outlined tile style="position: relative;">
     <v-card-title class="d-flex justify-space-between">
       <div>
         {{ name }}
       </div>
 
-      <div style="color: #6200ea;">
+      <div class="badge">
         &euro; {{ cost | round }},<sup>{{ cost | modulo }}</sup>
       </div>
     </v-card-title>
@@ -92,3 +91,21 @@
     }
 }
 </script>
+
+<style lang="scss" scoped>
+  .badge {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--blue);
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transform: translate(-10%, -55%);
+    text-shadow: 1px 1px #523679;
+  }
+</style>
